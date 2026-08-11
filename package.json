@@ -1,0 +1,13 @@
+{
+  "name": "instrument-tuner",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @instrument-tuner/web dev",
+    "build": "pnpm --filter @instrument-tuner/web build",
+    "preview": "pnpm --filter @instrument-tuner/web preview",
+    "typecheck": "pnpm --filter @instrument-tuner/web exec tsc -b"
+  }
+}
