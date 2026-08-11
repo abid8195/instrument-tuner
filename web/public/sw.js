@@ -4,10 +4,13 @@
  */
 
 const CACHE_NAME = 'instrument-tuner-v1'
+// Relative to the service worker's own scope, so this works whether the app
+// is served from the domain root or a subpath (e.g. GitHub Pages project
+// sites at /<repo>/).
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
+  './',
+  './index.html',
+  './manifest.json',
 ]
 
 self.addEventListener('install', (event) => {

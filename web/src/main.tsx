@@ -8,7 +8,7 @@ if (!import.meta.env.DEV && 'serviceWorker' in navigator) {
   // module graph causes stale-module bugs (React hook-order mismatches)
   // across edits and reloads.
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {})
+    navigator.serviceWorker.register('./sw.js').catch(() => {})
   })
 }
 
