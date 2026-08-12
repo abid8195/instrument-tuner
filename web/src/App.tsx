@@ -73,7 +73,11 @@ export default function App() {
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
               {activeInstrument.label} strings — tap to hear a reference tone
             </p>
-            <StringList strings={activeInstrument.strings} reading={reading} onPlayReference={playReferenceTone} />
+            <StringList
+              strings={activeInstrument.strings}
+              reading={reading}
+              onPlayReference={(frequency) => playReferenceTone(frequency, instrumentId)}
+            />
           </div>
         )}
       </div>
