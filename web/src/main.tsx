@@ -2,6 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
+import { ensureHostTokens } from './services/hostTokenFallback.ts'
+
+ensureHostTokens()
 
 if (!import.meta.env.DEV && 'serviceWorker' in navigator) {
   // Registered in production only — a service worker caching Vite's dev
