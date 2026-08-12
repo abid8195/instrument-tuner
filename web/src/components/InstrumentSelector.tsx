@@ -21,7 +21,7 @@ export function InstrumentSelector({ instruments, selectedId, onSelect }: Instru
             role="tab"
             aria-selected={isActive}
             onClick={() => onSelect(option.id)}
-            className={`rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+            className={`flex min-h-11 items-center rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
               isActive
                 ? 'border-[var(--accent-deep)] bg-[var(--accent-soft)] text-[var(--accent-deep)]'
                 : 'border-[var(--line)] bg-[var(--panel-quiet)] text-[var(--muted)] hover:text-[var(--ink)]'

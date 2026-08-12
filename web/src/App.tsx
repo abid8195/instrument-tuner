@@ -45,7 +45,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={() => void start()}
-                className="rounded-xl bg-[var(--accent-deep)] px-5 py-2.5 text-sm font-semibold text-[var(--paper)] transition-opacity hover:opacity-90"
+                className="flex min-h-11 items-center rounded-xl bg-[var(--accent-deep)] px-5 text-sm font-semibold text-[var(--paper)] transition-opacity hover:opacity-90"
               >
                 Enable microphone
               </button>
